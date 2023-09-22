@@ -1,0 +1,73 @@
+@fontePrincipal:  Roboto, sans-serif;
+@fonteDoTitulo:  Lobster, cursive;
+@corDoTexto: #fff;
+@corDeFundo: #eb3b5a;
+@corDoBotao: #f7b731;
+@corDeTextoBotao: #000;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: @corDeFundo;
+    font-family: @fontePrincipal;
+    color: @corDoTexto;
+}
+
+h1 {
+    font-family: @fonteDoTitulo;
+    font-size: 3em;
+}
+/* O main sera o nosso container principal então por conta disso que foi colocado max-width 960px
+com width: 100% */
+main {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2em;
+    text-align: center;
+
+}
+
+// regra para o botão 
+button {
+    padding: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-top: 16px;
+    border-radius: 8px;
+    background-color: @corDoBotao;
+    color: @corDeTextoBotao;
+    font-family: @fontePrincipal;
+}
+
+input {
+    display: block;
+    margin: 16px auto 0;
+    font-size: 2em;
+    max-width: 120px;
+    border: none;
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+    border-bottom: 6px solid #fff;
+}
+
+.resultado {
+    padding: 16px;
+    margin-top: 120px;
+    border: 8px dotted #fff;
+    display: none;
+
+    span {
+        font-weight: bold;
+        font-size: 3em;
+        display: block;
+
+    }
+}
